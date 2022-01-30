@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Igor Mont <igornathandev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "npx nodemon --exec babel-node src/index.js -e js,gql"
+  },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
