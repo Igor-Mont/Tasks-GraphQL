@@ -1,0 +1,25 @@
+type Task {
+  _id: ID!
+  title: String!
+  description: String!
+  isImportant: Boolean!
+  # When create model User, this is user
+  owner: String
+}
+
+input TaskInput {
+  title: String!
+  description: String!
+  isImportant: Boolean!
+  owner: String
+}
+
+type Query {
+  tasks: [Task]!
+}
+
+type Mutation {
+  createTask(data: TaskInput): Task!
+  updateTask(id: ID!, data: TaskInput): Task!
+  deleteTask(id: ID!): Boolean!
+}
