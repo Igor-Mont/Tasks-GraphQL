@@ -1,0 +1,21 @@
+{
+  "name": "gql-tasks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Igor Mont <igornathandev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.1",
+    "apollo-server": "^3.6.2",
+    "graphql": "^16.3.0",
+    "mongoose": "^6.1.8"
+  }
+}
