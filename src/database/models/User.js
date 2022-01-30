@@ -17,9 +17,9 @@ const Schema = new mongoose.Schema({
   },
   created_at: {
     type: Date,
-    required: true,
     default: new Date()
-  }
+  },
+  update_at: Date
 });
 
 const User = mongoose.model('User', Schema);

@@ -4,7 +4,9 @@ type Task {
   description: String!
   isImportant: Boolean!
   # When create model User, this is user
-  owner: String
+  owner: String!
+  created_at: Date!
+  updated_at: Date
 }
 
 input TaskInput {
