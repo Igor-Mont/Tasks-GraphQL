@@ -7,7 +7,11 @@ class UpdateUserService {
 
     if(userAlreadyExists) throw new Error("Email already exists");
 
-    const user = await User.findOneAndUpdate(id, data, { new: true });
+    const user = await User.findOneAndUpdate(id, {
+      name,
+      username,
+      email
+    }, { new: true });
 
     return user;
   }
