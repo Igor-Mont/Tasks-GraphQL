@@ -1,6 +1,10 @@
 import { Task } from "../../../database/models/Task";
+import { User } from "../../../database/models/User";
 
 export default {
+  Task: {
+    owner: async (post) => await User.findById(post.owner)
+  },
   Query: {
     tasks: async () => await Task.find()
   },

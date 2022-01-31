@@ -11,10 +11,8 @@ const Schema = new mongoose.Schema({
     required: true,
   },
   owner: {
-    type: String,
-    // - When create model User, add:
-    // type: mongoose.Schema.Types.ObjectId 
-    // ref: 'User',
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
     required: true
   },
   created_at: {
