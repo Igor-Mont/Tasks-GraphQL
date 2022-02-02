@@ -5,6 +5,7 @@ type User {
   name: String!
   username: String!
   email: String!
+  tasks: [Task]!
   created_at: Date!
   update_at: Date
 }

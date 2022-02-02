@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { Schema as Task } from "./Task";
 
 const Schema = new mongoose.Schema({
   name: {
@@ -15,8 +16,12 @@ const Schema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  tasks: {
+    type: [Task],
+    ref: 'Task'
+  },
   created_at: {
-    type: Date,
+    type: Date,   
     default: new Date()
   },
   update_at: Date
