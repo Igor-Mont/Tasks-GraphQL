@@ -18,7 +18,8 @@ const Schema = new mongoose.Schema({
   },
   tasks: {
     type: [Task],
-    ref: 'Task'
+    ref: 'Task',
+    default: undefined
   },
   created_at: {
     type: Date,   

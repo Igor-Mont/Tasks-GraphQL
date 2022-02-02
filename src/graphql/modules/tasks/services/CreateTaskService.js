@@ -17,7 +17,6 @@ class CreateTaskService {
     });
 
     const user = await User.findById(owner);
-    user.tasks.shift();
     const tasks = [...user.tasks, task];
 
     await User.findByIdAndUpdate(owner, {
